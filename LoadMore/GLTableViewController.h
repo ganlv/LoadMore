@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
+#import "GLHeaderView.h"
 @interface GLTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,atomic) NSMutableArray *dataList;
+
+@property (strong,atomic) GLHeaderView *headerView;
 
 @end

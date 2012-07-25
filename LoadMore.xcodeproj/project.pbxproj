@@ -14,6 +14,8 @@
 		E655BCBC15BF97E400BBFCCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCBB15BF97E400BBFCCB /* main.m */; };
 		E655BCC015BF97E400BBFCCB /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */; };
 		E655BCC815BF9BE700BBFCCB /* GLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */; };
+		E655BCCF15BFA4C800BBFCCB /* redArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E655BCCE15BFA4C800BBFCCB /* redArrow.png */; };
+		E655BCD215BFC5C000BBFCCB /* GLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCD115BFC5BF00BBFCCB /* GLHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
 		E655BCC615BF9BE700BBFCCB /* GLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTableViewController.h; sourceTree = "<group>"; };
 		E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTableViewController.m; sourceTree = "<group>"; };
+		E655BCCE15BFA4C800BBFCCB /* redArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redArrow.png; sourceTree = "<group>"; };
+		E655BCD015BFC5BF00BBFCCB /* GLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHeaderView.h; sourceTree = "<group>"; };
+		E655BCD115BFC5BF00BBFCCB /* GLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +80,14 @@
 		E655BCB515BF97E400BBFCCB /* LoadMore */ = {
 			isa = PBXGroup;
 			children = (
+				E655BCCE15BFA4C800BBFCCB /* redArrow.png */,
 				E655BCBE15BF97E400BBFCCB /* GLAppDelegate.h */,
 				E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */,
 				E655BCB615BF97E400BBFCCB /* Supporting Files */,
 				E655BCC615BF9BE700BBFCCB /* GLTableViewController.h */,
 				E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */,
+				E655BCD015BFC5BF00BBFCCB /* GLHeaderView.h */,
+				E655BCD115BFC5BF00BBFCCB /* GLHeaderView.m */,
 			);
 			path = LoadMore;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E655BCBA15BF97E400BBFCCB /* InfoPlist.strings in Resources */,
+				E655BCCF15BFA4C800BBFCCB /* redArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +169,7 @@
 				E655BCBC15BF97E400BBFCCB /* main.m in Sources */,
 				E655BCC015BF97E400BBFCCB /* GLAppDelegate.m in Sources */,
 				E655BCC815BF9BE700BBFCCB /* GLTableViewController.m in Sources */,
+				E655BCD215BFC5C000BBFCCB /* GLHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

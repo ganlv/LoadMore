@@ -14,6 +14,7 @@
 
 @implementation GLTableViewController
 @synthesize dataList;
+@synthesize headerView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,6 +35,10 @@
     dataList = [[NSMutableArray alloc] init];
     [dataList  addObjectsFromArray:array];
     self.title = @"Load more";
+    
+    headerView = [[GLHeaderView alloc] initWithFrame:CGRectMake(0, -60,320, 60)];
+    [self.view addSubview:headerView];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -128,10 +133,37 @@
 
 -(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(CGPoint *)targetContentOffset{
     //do fresh
+    NSLog(@"some thing dragging,%f",scrollView.contentOffset.y);
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    
+    NSString *str =[dateFormatter stringFromDate:[NSDate date]];
+    NSString *updateTime = [NSString stringWithFormat:@"最后更新于：%@",str];
+    headerView.updateTimeLabel.text= updateTime;
+    
+    [UIView animateWithDuration:0 animations:^{
+        headerView.loadImage.transform = CGAffineTransformMakeRotation(0);
+    }];
+    
+    
+    NSArray *array = [[NSArray alloc] initWithObjects:@"痴心绝对",@"痴心绝对",@"痴心绝对",@"痴心绝对",@"痴心绝对", nil];
+    dataList = [[NSMutableArray alloc] init];
+    [dataList  addObjectsFromArray:array];
+    [self.tableView reloadData];
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     //scroll swith view
+    NSLog(@"scroll view,%f",scrollView.contentOffset.y);
+    
+    if(scrollView.contentOffset.y < -65.0){
+        headerView.statusLabel.text = @"松开即可刷新";
+        [UIView animateWithDuration:0.2 animations:^{
+            headerView.loadImage.transform = CGAffineTransformMakeRotation(M_PI);
+        }];
+    }
 }
 
 @end
