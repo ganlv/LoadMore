@@ -7,7 +7,7 @@
 //
 
 #import "GLAppDelegate.h"
-
+#import "GLTableViewController.h"
 @implementation GLAppDelegate
 
 @synthesize window = _window;
@@ -16,7 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
+    
+    GLTableViewController *viewController = [[GLTableViewController alloc] init];
+    
+    UINavigationController *nag = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = nag;
     [self.window makeKeyAndVisible];
     return YES;
 }

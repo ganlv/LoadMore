@@ -13,6 +13,7 @@
 		E655BCBA15BF97E400BBFCCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E655BCB815BF97E400BBFCCB /* InfoPlist.strings */; };
 		E655BCBC15BF97E400BBFCCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCBB15BF97E400BBFCCB /* main.m */; };
 		E655BCC015BF97E400BBFCCB /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */; };
+		E655BCC815BF9BE700BBFCCB /* GLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E655BCBD15BF97E400BBFCCB /* LoadMore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadMore-Prefix.pch"; sourceTree = "<group>"; };
 		E655BCBE15BF97E400BBFCCB /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
 		E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		E655BCC615BF9BE700BBFCCB /* GLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTableViewController.h; sourceTree = "<group>"; };
+		E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				E655BCBE15BF97E400BBFCCB /* GLAppDelegate.h */,
 				E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */,
 				E655BCB615BF97E400BBFCCB /* Supporting Files */,
+				E655BCC615BF9BE700BBFCCB /* GLTableViewController.h */,
+				E655BCC715BF9BE700BBFCCB /* GLTableViewController.m */,
 			);
 			path = LoadMore;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				E655BCBC15BF97E400BBFCCB /* main.m in Sources */,
 				E655BCC015BF97E400BBFCCB /* GLAppDelegate.m in Sources */,
+				E655BCC815BF9BE700BBFCCB /* GLTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
