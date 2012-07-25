@@ -20,11 +20,11 @@
 		E655BCAF15BF97E400BBFCCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E655BCB115BF97E400BBFCCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E655BCB315BF97E400BBFCCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E655BCB715BF97E400BBFCCB /* LoadMore-Info.plist */ = {isa = PBXFileReference; path = "LoadMore-Info.plist"; sourceTree = "<group>"; };
+		E655BCB715BF97E400BBFCCB /* LoadMore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoadMore-Info.plist"; sourceTree = "<group>"; };
 		E655BCB915BF97E400BBFCCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E655BCBB15BF97E400BBFCCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E655BCBD15BF97E400BBFCCB /* LoadMore-Prefix.pch */ = {isa = PBXFileReference; path = "LoadMore-Prefix.pch"; sourceTree = "<group>"; };
-		E655BCBE15BF97E400BBFCCB /* GLAppDelegate.h */ = {isa = PBXFileReference; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		E655BCBD15BF97E400BBFCCB /* LoadMore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadMore-Prefix.pch"; sourceTree = "<group>"; };
+		E655BCBE15BF97E400BBFCCB /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
 		E655BCBF15BF97E400BBFCCB /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
