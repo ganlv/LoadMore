@@ -80,7 +80,7 @@
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }    
+    }
     cell.textLabel.text = [dataList objectAtIndex:indexPath.row];
     return cell;
 }

@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "GLHeaderView.h"
-@interface GLTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
+@interface GLTableViewController : UITableViewController
 
 @property (strong,atomic) NSMutableArray *dataList;
 
