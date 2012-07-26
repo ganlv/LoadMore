@@ -156,7 +156,7 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     //scroll swith view
-    NSLog(@"scroll view,%f",scrollView.contentOffset.y);
+    NSLog(@"%f",scrollView.contentSize.height);
     
     if(scrollView.contentOffset.y < -65.0){
         headerView.statusLabel.text = @"松开即可刷新";
